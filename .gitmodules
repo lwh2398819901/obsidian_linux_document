@@ -1,0 +1,3 @@
+[submodule "obsidian-pub-config"]
+	path = obsidian-pub-config
+	url = git@gitee.com:lwh2398819901/obsidian-pub-config.git
