@@ -221,9 +221,8 @@ public class Main {
 | {@link reference}                                                 | Link to other symbol.连到其他的引用                                            | Class, Interface, Field, Method |       |
 | {@value}                                                          | Return the value of a static field.返回一个静态作用域的值                          | Static Field                    | 1.4.0 |
 
-
-
 生成模板
+
 ```java
 /**  
  * @author xunlu  
@@ -242,7 +241,6 @@ public class Main {
     }  
 }
 ```
-
 
 _**命令行生成**_
 
@@ -425,16 +423,86 @@ default -> System.out.println(1);
 ## 数组
 
 java中数组定义可以用以下两种方式定义
+**定义数组(一维，二维，动态创建二维)**
 
 ```java
+//第一种
 int arr [] = new int[]{1,2,3};
 int arr2[]={1,2,3};
-//or
+
+int [] x;  
+x = new int[10];
+
+//第二种
 int [] arr = new int []{1,2,3};
+
+//定义二维数组
+int[][] arr_1 = new int[][]{{1, 2, 3, 4, 5, 6, 7, 8}, {3, 4}};  
+int [] [] arr_2 = {{1,2,3,4},{1,2,3,4}};
+
+//动态创建数组
+int [] [] arr_3 = new int[3][];  
+arr_3[0]=new int[]{1};  
+arr_3[1]=new int[]{2,3,4,5};  
+arr_3[2]=new int[]{2,3,4,5,6};
 ```
 
-**获取数组长度**\
-<font color=#FF0000>数组内置length变量，直接获取该变量即可。例如：arr.length</font>
+推荐使用 第一种方式定义数组
+**获取数组长度**\ <font color=#FF0000>数组内置length变量，直接获取该变量即可。例如：arr.length</font>
 
 java中数组默认有初始化值；也就是0；
+
+**遍历数组**
+
+```java
+public class Main {  
+    public static void main(String[] args) {  
+        System.out.println("Hello world!");  
+        int[] arr = new int[]{1, 2, 3};  
+        int[] arr2 = {1, 2, 3};  
+		//定义二维数组
+        int[][] arr_1 = new int[][]{{1, 2, 3, 4, 5, 6, 7, 8}, {3, 4}};  
+  
+        for (int i = 0; i < arr.length; ++i) {  
+            System.out.println(arr[i]);  
+        }  
+  
+        for (int i = 0; i < arr_1.length; ++i) {  
+            for (int j = 0; j < arr_1[i].length; ++j) {  
+                System.out.println(arr_1[i][j]);  
+            }  
+        }  
+
+		//arr_1.for
+		for (int[] ints : arr_1) {  
+		    for (int anInt : arr_1) {  
+		        System.out.println(anInt);  
+			}  
+		}
+
+
+    }  
+  
+    public int test(int num) {  
+        return ++num;  
+    }  
+}
+```
+
+java数组与c++很不一样，首先有一点，java的二维数组的不像c++要固定死[2][4]这样，他每一个一维数组的个数可以不一样。难以理解。\
+就像是这样
+感觉内存像是这样一般
+```
+c++
+{1，2，3，4，5}
+{6，7，8，9，10}
+{1，2，3，4，5}
+{6，7，8，9，10}
+
+java
+{1,2,3,4,5}
+{6,7}
+{1,2,4,5}
+{6,7，8}
+```
 
