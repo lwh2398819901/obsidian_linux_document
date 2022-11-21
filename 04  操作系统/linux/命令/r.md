@@ -83,3 +83,67 @@ uos@uos-PC ~/Desktop>
 rpm查看所有已安装软件 rpm -qa
 
 rpm显示软件的安装路径 rpm -ql redis
+
+
+## readelf
+
+``` bash
+liuwh@liuwh-PC ~/D/l/share> readelf -d libmod.so
+
+Dynamic section at offset 0x2e50 contains 21 entries:
+  标记        类型                         名称/值
+ 0x0000000000000001 (NEEDED)             共享库：[libc.so.6]  ## 注意这里 ！！！！ 这里可以看到库文件依赖别的库文件
+ 0x000000000000000c (INIT)               0x1000
+ 0x000000000000000d (FINI)               0x1144
+ 0x0000000000000019 (INIT_ARRAY)         0x3e40
+ 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x3e48
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x260
+ 0x0000000000000005 (STRTAB)             0x370
+ 0x0000000000000006 (SYMTAB)             0x298
+ 0x000000000000000a (STRSZ)              123 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x4000
+ 0x0000000000000007 (RELA)               0x420
+ 0x0000000000000008 (RELASZ)             168 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0x400
+ 0x000000006fffffff (VERNEEDNUM)         1
+ 0x000000006ffffff0 (VERSYM)             0x3ec
+ 0x000000006ffffff9 (RELACOUNT)          3
+ 0x0000000000000000 (NULL)               0x0
+liuwh@liuwh-PC ~/D/l/share> readelf -d a.out 
+
+Dynamic section at offset 0x2e10 contains 25 entries:
+  标记        类型                         名称/值
+ 0x0000000000000001 (NEEDED)             共享库：[libmod.so]  ## 注意这里 ！！！！ 这里可以看到可执行程序依赖的库文件
+ 0x0000000000000001 (NEEDED)             共享库：[libc.so.6]
+ 0x000000000000000c (INIT)               0x401000
+ 0x000000000000000d (FINI)               0x4011f4
+ 0x0000000000000019 (INIT_ARRAY)         0x403e00
+ 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x403e08
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x400308
+ 0x0000000000000005 (STRTAB)             0x4003b8
+ 0x0000000000000006 (SYMTAB)             0x400328
+ 0x000000000000000a (STRSZ)              81 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000003 (PLTGOT)             0x404000
+ 0x0000000000000002 (PLTRELSZ)           72 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x400468
+ 0x0000000000000007 (RELA)               0x400438
+ 0x0000000000000008 (RELASZ)             48 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffffe (VERNEED)            0x400418
+ 0x000000006fffffff (VERNEEDNUM)         1
+ 0x000000006ffffff0 (VERSYM)             0x40040a
+ 0x0000000000000000 (NULL)               0x0
+liuwh@liuwh-PC ~/D/l/share> 
+
+```
+
+https://blog.csdn.net/weixin_41964962/article/details/107367856
