@@ -52,12 +52,17 @@ java的特性和优势
 
 [java8官网下载](https://www.oracle.com/java/technologies/downloads/#java8)
 
-为了方便 ，我选择的使用命令行安装
+[CentOS下JDK的安装教程（及JAVA_HOME配置、以jdk1.8为例）](https://www.hangge.com/blog/cache/detail_2651.html)
 
+为了方便 ，我选择的使用命令行安装 java 8
+**debian**
 ```bash
 apt install openjdk-8-jdk
 ```
-
+**redhat**
+```bash
+yum install java-1.8.0-openjdk
+```
 验证是否安装成功
 
 ```bash

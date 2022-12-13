@@ -102,6 +102,14 @@ do{
 
 <font color=#FF0000>坏处：</font> <font color=#FF0000>1.增加缩进，2.破坏可读性</font>
 
+---
+
+## C++编程技巧: Pimpl
+https://zhuanlan.zhihu.com/p/458947637
+
+## C++ D指针和Q指针
+https://www.devbean.net/2016/11/qt-creator-source-study-07/
+
 ## 参考链接
 
 [C语言中goto()函数的使用场景](https://blog.csdn.net/weixin_44297979/article/details/103880473)

@@ -57,7 +57,7 @@ redis和memcache区别
 1. github下载源码
 > git clone https://github.com/redis/redis
 2. make
->详细看官方介绍和github readme文件 如果需要ssl等功能  单纯make是最基础功能（不够也够用了）
+>详细看官方介绍和github readme文件 如果需要ssl等功能  单纯make是最基础功能（也够用了）
 3. make install
 > 安装到系统默认路径下 /usr/local/bin
 4. 创建自己的配置文件,之后使用该配置文件
