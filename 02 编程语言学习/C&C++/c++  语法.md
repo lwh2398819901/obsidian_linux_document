@@ -1028,6 +1028,15 @@ unordered_map unordered_multimap unordered_set unordered_multiset
 
 
 ## 14 enum class 
+
+C++11 中，枚举的关键字为 _enum class_，即在 enum 后加 class，与 C++98 的 "plain" enum 区别如下：
+```cpp
+
+enum class Color { red, green, blue };　　 
+
+enum Color { red, green, blue };　　 
+```
+
 https://zhuanlan.zhihu.com/p/501309032
 ## 其他
 ### function 函数包装器

@@ -84,6 +84,14 @@ int main()
 虚基类并不是“绝对的”，而是“相对的”：虚基类在它自身声明、定义的时候无需任何修饰，只是在<font color=#FF0000>子类继承</font>时进行 virtual 修饰。
 <https://www.airchip.org.cn/index.php/2022/02/25/cpp-example-virtual-inheritance/>
 
+```cpp
+class Base{};
+
+class Byte : virtual public Base{};  //继承时候 使用virtual
+
+class Expert : virtual public Base{};
+```
+
 ## 析构
 
 - 子类的析构函数
