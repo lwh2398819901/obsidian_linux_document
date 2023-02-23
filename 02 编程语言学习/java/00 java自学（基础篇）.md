@@ -9,7 +9,9 @@
 ## 学习路线图
 
 ![[Pasted image 20221111211028.png]]
+
 <https://www.bilibili.com/read/cv5702420>
+
 <https://www.bilibili.com/video/BV12J41137hu?p=37&vd_source=ccbe0c793ac5e34ebb735794692f049e>
 
 ## java
@@ -97,22 +99,24 @@ public class Hello{
 <https://www.jianshu.com/p/e5c86b556247>
 
 ## IDE环境安装
-
+### 官网下载
 参考链接：
 [Ubuntu安装IDEA](https://blog.csdn.net/qq_41931797/article/details/102813106)
 
-1. 从idea官网下载安装包
+1. 从idea官网下载[安装包](https://www.jetbrains.com/idea/download/#section=linux)
 2. 通过激活码激活     [激活码网站](http://idea.hicxy.com/)
 3. [idea汉化](https://blog.csdn.net/Cooperia/article/details/119329395)
 4. ubuntu/deepin环境下 创建desktop文件  ==touch idea.desktop==
+5. 将idea软连接到opt下 `ln -s (pwd)/idea-IU-223.8617.56/ /opt/idea`
+
 
 ```bash
 [Desktop Entry]
 Name=idea
-Exec=/opt/idea-IU-222.4345.14/bin/idea.sh
+Exec=/opt/idea/bin/idea.sh
 Terminal=false
 Type=Application
-Icon=/opt/idea-IU-222.4345.14/bin/idea.svg
+Icon=/opt/idea/bin/idea.svg
 Comment=Next Shell for PC
 Categories=Development;
 X-Deepin-CreatedBy=com.deepin.dde.daemon.Launcher
@@ -120,6 +124,10 @@ X-Deepin-AppID=idea
 ```
 
 5. 拷贝==sudo cp idea.desktop /usr/share/applications/==
+### deepin安装
+1. 应用商店下载idea
+2. 通过激活码激活     [激活码网站](http://idea.hicxy.com/)
+3. [idea汉化](https://blog.csdn.net/Cooperia/article/details/119329395)
 
 ## idea设置
 
@@ -127,6 +135,12 @@ X-Deepin-AppID=idea
 ![[Pasted image 20221112231642.png]]
 **提示忽略大小写**
 ![[Pasted image 20221112231709.png]]
+
+
+## jdk相关
+### 版本
+https://docs.oracle.com/en/java/javase/index.html
+### 帮助文档
 
 ## java idea项目结构
 
@@ -140,7 +154,7 @@ project(项目)
 ### 包机制
 
 模块中包含着包，包里包含着类。\
-一般包名是<font color=#FF0000>域名倒置</font>，比如com.baidu.www    www省区不写，所以包为com.baidu
+一般包名是<font color=#FF0000>域名倒置</font>，比如com.baidu.www    www省去不写，所以包为com.baidu
 ![[Pasted image 20221113151144.png]]
 **创建包**
 
