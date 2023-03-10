@@ -2,6 +2,8 @@
 ```
 
 
+参考链接：
+
 [12 款 Linux 终端推荐](https://cloud.tencent.com/developer/article/1521792)
 
 ## guake
@@ -16,3 +18,7 @@ apt-get install guake
 ```
 
 从Applications>Accessories>Guake处运行它。然后右键点击它系统栏图标，然后点击‘preferences’，设置你的喜好。你可以通过“**man guake**“活动详细帮助信息。
+
+
+## x-term
+[如何使Xterm字体变大](https://blog.csdn.net/m0_56745306/article/details/123591166)

@@ -29,6 +29,8 @@ udev处理的所有设备信息都存储在udev数据库中， 并且会发送�
 
 ## 配置文件
 
+![[Pasted image 20230223160303.png]]
+
 ### `所有的规则文件统一按照文件名的字典顺序处理`
 
 也就是说假设有如下规则文件
@@ -124,3 +126,4 @@ ACTION=="add", SUBSYSTEM=="usb", RUN+="lmt-udev force"
 2. [udev 入门：管理设备事件的 Linux 子系统](https://zhuanlan.zhihu.com/p/51984452)
 3. [udev规则以及编写](https://www.cnblogs.com/fah936861121/p/6496608.html)
 4. [udev udevadm介绍及linux设备重命名和自动挂载应用实例分析](https://blog.csdn.net/li_wen01/article/details/89435306)
+5. [linux ：udev规则详细介绍](https://blog.csdn.net/rong11417/article/details/102881398#t0)

@@ -44,6 +44,11 @@ java的特性和优势
 
 ![[Pasted image 20221111214005.png]]
 
+**JDK与JAVA版本**
+
+ 参考链接： [Java--Java版本和JDK版本](https://blog.csdn.net/MinggeQingchun/article/details/120578602)
+![[Pasted image 20230224211745.png]]
+
 ## 安装环境
 
 **参考链接**
@@ -524,4 +529,46 @@ java
 {1,2,4,5}
 {6,7，8}
 ```
+
+## 可变参数
+![[Pasted image 20230224212141.png]]
+
+
+# 面向对象
+
+
+## 值传递和引用传递
+Java是值传递。当传的是基本类型时，传的是值的拷贝，对拷贝变量的修改不影响原变量；当传的是引用类型时，传的是引用地址的拷贝，但是拷贝的地址和真实地址指向的都是同一个真实数据，因此可以修改原变量中的值；当传的是String类型时，虽然拷贝的也是引用地址，指向的是同一个数据，但是String的值不能被修改，因此无法修改原变量中的值。
+
+**值传递**
+```java
+public void test() {
+    int a = 1;
+    change(a);
+    System.out.println("a的值：" + a);
+}
+private void change(int a) {
+    a = a + 1;
+}
+// 输出
+a的值：1
+```
+
+**引用传递**
+```java
+public void test() {
+   User user = new User();
+   user.setAge(18);
+   change(user);
+   System.out.println("年龄:" + user.getAge());
+}
+private void change(User user) {
+   user.setAge(19);
+}
+// 输出
+年龄:19
+```
+
+对于c++程序员其实很好理解，是吧？
+c++程序员看到new后 ，知道这个是个指针，然后传递的是指针的情况下，自然能修改同一处内存。而基本类型是在栈上，是拷贝的数据，所以修改无效。
 

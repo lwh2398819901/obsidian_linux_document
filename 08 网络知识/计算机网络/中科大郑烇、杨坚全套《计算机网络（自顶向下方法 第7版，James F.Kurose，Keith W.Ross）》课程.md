@@ -145,6 +145,7 @@ HTTP ：
 ## 3.3 无连接传输 UDP <https://www.bilibili.com/video/BV1JV411t7ow?p=25>
 
 ## 3.4 可靠数据传输的原理 <https://www.bilibili.com/video/BV1JV411t7ow?p=26>
+![[Pasted image 20230303124144.png]]
 
 ## 3.5 面向连接的传输：TCP <https://www.bilibili.com/video/BV1JV411t7ow?p=27>
 
