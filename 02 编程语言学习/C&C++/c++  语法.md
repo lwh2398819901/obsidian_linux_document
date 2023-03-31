@@ -1131,3 +1131,25 @@ int main()
 }
 
 ```
+
+## 私有静态对象初始化
+```cpp
+class A
+{
+public:
+    A(int* a):m_b(*a){
+        m_a = 0;
+    }
+    ~A(){
+        delete []m_d;
+    }
+
+
+private:
+    int m_a;
+    int &m_b;
+    //主要是这一个 私有的静态对象如何初始化
+    constexpr const static int m_c[5]={0,1,2,3,4};  
+    char*m_d=new char[1024];
+};
+```
