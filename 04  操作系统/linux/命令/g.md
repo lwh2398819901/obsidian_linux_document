@@ -1,3 +1,5 @@
-
+---
+dg-publish: true
+---
 ```toc
 ```

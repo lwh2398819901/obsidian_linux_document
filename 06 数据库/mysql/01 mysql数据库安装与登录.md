@@ -1,5 +1,6 @@
-## 01 mysql数据库安装与登录
-
+---
+dg-publish: true
+---
 ```toc
 ```
 

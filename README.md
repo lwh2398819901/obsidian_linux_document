@@ -1,3 +1,10 @@
+---
+dg-publish: true
+dg-home: true
+---
+```toc
+```
+
 ## 简介
 
 本仓库是基于我的另一个仓库 obsidian-linux-notes进行整理而来，之前的仓库将不再维护。

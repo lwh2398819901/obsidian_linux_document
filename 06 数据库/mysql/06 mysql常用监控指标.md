@@ -1,3 +1,8 @@
+---
+dg-publish: true
+---
+```toc
+```
 ## 参考链接
 
 [MySQL常用监控指标及监控方法](https://www.cnblogs.com/wwcom123/p/10759494.html)

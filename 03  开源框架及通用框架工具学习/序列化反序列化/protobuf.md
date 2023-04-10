@@ -1,4 +1,7 @@
 
+---
+dg-publish: true
+---
 ```toc
 ```
 ## 安装

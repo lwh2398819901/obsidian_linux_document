@@ -1,7 +1,9 @@
 
+---
+dg-publish: true
+---
 ```toc
 ```
-
 ## ps
 
 ps指令，全称 process status，即**进程状态**，相比于`top`指令，`ps`指令展示的是当前进程状态的快照（snapshot），而不是实时更新。

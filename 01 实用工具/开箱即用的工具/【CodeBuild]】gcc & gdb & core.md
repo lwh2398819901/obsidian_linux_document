@@ -1,5 +1,9 @@
+---
+dg-publish: true
+---
 ```toc
 ```
+
 
 ## gcc
 

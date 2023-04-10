@@ -1,7 +1,8 @@
-## t
+---
+dg-publish: true
+---
 ```toc
 ```
-
 ## top
 
 命令行选项：

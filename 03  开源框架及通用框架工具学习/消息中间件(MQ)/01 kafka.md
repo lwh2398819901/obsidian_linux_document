@@ -1,4 +1,7 @@
-h```toc
+---
+dg-publish: true
+---
+```toc
 ```
 
 ## 名词解释

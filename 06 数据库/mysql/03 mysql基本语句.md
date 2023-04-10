@@ -1,5 +1,6 @@
-## 03 mysql基本语句
-
+---
+dg-publish: true
+---
 ```toc
 ```
 

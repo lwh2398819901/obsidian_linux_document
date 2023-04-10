@@ -1,6 +1,8 @@
+---
+dg-publish: true
+---
 ```toc
 ```
-
 ## lsof
 
 <https://www.cnblogs.com/sparkdev/p/10271351.html>

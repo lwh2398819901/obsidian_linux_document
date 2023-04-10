@@ -1,6 +1,8 @@
+---
+dg-publish: true
+---
 ```toc
 ```
-
 <span style="background:#A0CCF6">这里收录一些我常用 但是没有太多学习成本的工具，不值得像是git一样单独一个章节介绍。</span>
 
 

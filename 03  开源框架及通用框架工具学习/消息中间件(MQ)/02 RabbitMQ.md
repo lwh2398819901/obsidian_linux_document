@@ -1,6 +1,8 @@
+---
+dg-publish: true
+---
 ```toc
 ```
-
 参考链接：\
 [【学相伴】RabbitMQ最新完整教程IDEA版通俗易懂  视频](https://www.bilibili.com/video/BV1dX4y1V73G/?spm_id_from=333.337.search-card.all.click&vd_source=ccbe0c793ac5e34ebb735794692f049e)\
 [【学相伴】RabbitMQ最新完整教程IDEA版通俗易懂  笔记](https://www.kuangstudy.com/zl/rabbitmq#1365897801984241665)\

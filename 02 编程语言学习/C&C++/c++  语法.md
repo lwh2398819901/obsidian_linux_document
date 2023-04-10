@@ -1,6 +1,6 @@
+
 ```toc
 ```
-
 # c++11~17部分新特性
 ## 1. > 
  c++11 之前 在模板中，编译器碰到 >> 会认为是操作符 导致编译失败
@@ -492,34 +492,39 @@ int main() {
 C++11 之后explicit支持多个参数的构造函数
 
 ## 8 for 增强
-ex1：遍历字符串
+
+遍历字符串
 ```
 std::string str = “hello, world”;  
 for(auto ch : str) {  
     std::cout << ch << std::endl;  //遍历str，输出每个字符
 }
 ```
-ex2：遍历数组
+
+遍历数组
 ```
 int arr[] = {1, 2, 3, 4};  
 for(auto i : arr) {  
      std::cout<< i << std::endl;  //值传递 不能修改数组内数值
 }  
 ```
-ex3：遍历stl 容器
+
+遍历stl 容器
 ```
 std::vector<std::string> str_vec = {“i”, “like”,  "google”};  
 for(auto& it : str_vec) {  
      it = “c++”;  //通过引用可以修改容器内容
 }  
 ```
-ex4：遍历stl map 
+
+遍历stl map 
 ```
 std::map<int, std::string> hash_map = {{1, “c++”}, {2, “java”}, {3, “python”}};  
 for(auto it : hash_map) {  
      std::cout << it.first << “\t” << it.second << std::endl;  
 }  
 ```
+
 ## 9. =default =delete override final noexcept  
 ### 复习一下基础知识 
 C++中，当我们设计与编写一个类时，若不显著申明，则类会默认为我们提供如下几个函数：
