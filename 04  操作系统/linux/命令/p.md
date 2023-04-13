@@ -1,12 +1,54 @@
 
 ---
-dg-publish: true
+dg-publish: false
 ---
 ```toc
 ```
 ## ps
 
 ps指令，全称 process status，即**进程状态**，相比于`top`指令，`ps`指令展示的是当前进程状态的快照（snapshot），而不是实时更新。
+
+### 精简版
+**ps aux 含义**
+
+```
+root@liuwh-PC /h/liuwh# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 167612  5868 ?        Ss   08:15   0:06 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    08:15   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   08:15   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   08:15   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   08:15   0:00 [kworker/0:0H-events_highpri]
+```
+
+| USER | PID | %CPU | %MEM | VSZ | RSS | TTY | STAT | START | TIME | COMMAND |
+| ---- | --- | ---- | ---- | --- | --- | --- | ---- | ----- | ---- | ------- |
+|  用户名    |   进程ID  |  占用CPU百分比    |  占用内存百分比    | 虚拟内存（KB）    | 该进程占用的固定内存（KB）（驻留中页的数量）    |  该进程在哪个终端运行。若与终端无关，则显示？。若为pts/0,则表示由网络链接主机进程   | 进程状态     |   进程启动时间    |   进程实际使用cpu运行时间   |  命令名称和参数       |
+
+**stat状态含义**
+
+![[Pasted image 20230412135646.png]]
+
+其中STAT状态位常见的状态字符有  
+D      //无法中断的休眠状态（通常 IO 的进程）；   
+R      //正在运行可中在队列中可过行的；   
+S      //处于休眠状态；   
+T      //停止或被追踪；   
+W      //进入内存交换 （从内核2.6开始无效）；   
+X      //死掉的进程 （基本很少见）；   
+Z      //僵尸进程；   
+<      //优先级高的进程   
+N      //优先级较低的进程   
+L      //有些页被锁进内存；   
+s      //进程的领导者（在它之下有子进程）；   
+l      //多线程，克隆线程（使用 CLONE_THREAD, 类似 NPTL pthreads）；   
++      //位于后台的进程组；
+
+
+
+参考链接：[Linux进程状态(ps stat)](https://www.cnblogs.com/programmer-tlh/p/11593330.html)
+
+
 ### ps 命令的风格
 
 这个是我之前没注意到的，ps命令的参数其实支持**三种风格**，分别是 UNIX、BSD和GNU，风格不同，意味着**参数输入的形式**也不同。
@@ -196,9 +238,9 @@ xstat      exit or stop status (valid only for stopped or zombie process)
 
 另外，大家可能会发现，如果加上 `grep` 指令，会导致**抬头信息**没了，这是因为被过滤掉了，如果要展示的话可以参考这里：[grep命令保留第一行](https://link.juejin.cn?target=https%3A%2F%2Fwww.jianshu.com%2Fp%2F6ef88d510264 "https://www.jianshu.com/p/6ef88d510264")
 
-## 补充
+### 补充
 
-### 什么是 session leaders
+#### 什么是 session leaders
 
 我们知道，在Linux中，每个进程有几种ID与其相关，分别是 PID、PPID、PGID 和 SID。
 
@@ -234,7 +276,7 @@ $ ps -ao pid,ppid,pgid,sid,comm
 复制代码
 ```
 
-## 总结
+### 总结
 
 ps 命令的介绍到这里就结束了，如果你想查看更多参数的含义，可以通过 `man ps` 得到，如果你不想看英文，也可以看这里：[Linux三种风格（Unix、BSD、GNU）下的ps的参数说明](https://link.juejin.cn?target=https%3A%2F%2Fblog.csdn.net%2Fruibin_cao%2Farticle%2Fdetails%2F84660224 "https://blog.csdn.net/ruibin_cao/article/details/84660224")
 
