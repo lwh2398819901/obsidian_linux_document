@@ -1,18 +1,39 @@
 ---
-dg-publish: false
+## dg-publish: false
 ---
 ```toc
 ```
 
 ## 简介
--   [**官方网站：https://mitmproxy.org/**](https://mitmproxy.org/)
--   [**官方文档：https://docs.mitmproxy.org/stable/**](https://docs.mitmproxy.org/stable/)
--   [**优秀总结：https://blog.wolfogre.com/posts/usage-of-mitmproxy/**](https://blog.wolfogre.com/posts/usage-of-mitmproxy/)
+前置知识：
+
+- [[网络协议#TCP|TCP]]
+
+- [[网络协议#SSL/TLS|SSL/TLS]]
+
+- [[中间人攻击]]
+
+
+文档及参考链接:
+
+- [**官方网站：https://mitmproxy.org/**](https://mitmproxy.org/)
+- [**官方文档：https://docs.mitmproxy.org/stable/**](https://docs.mitmproxy.org/stable/)
+- [**中文介绍：https://ptorch.com/docs/10/mitmproxy_introduction**](https://ptorch.com/docs/10/mitmproxy_introduction)
+- [**优秀总结：https://blog.wolfogre.com/posts/usage-of-mitmproxy/**](https://blog.wolfogre.com/posts/usage-of-mitmproxy/)
+- [**  **]()
+- [**  **]()
+- [**  **]()
+
+类似工具
+[[]]
 
 
 ## 测试
+
 ### [[【container】docker|docker部署]]
+
 参考链接 ：[dockerhub:mitmproxy](https://hub.docker.com/r/mitmproxy/mitmproxy/)
+
 #### 用法
 
 ```sh
@@ -23,6 +44,7 @@ $ docker run --rm -it [-v ~/.mitmproxy:/home/mitmproxy/.mitmproxy] -p 8080:8080 
 
 一旦启动，mitmproxy 将作为 HTTP 代理侦听 `localhost:8080`:
 设置系统代理
+
 ```sh
 $ http_proxy=http://localhost:8080/ curl http://example.com/
 $ https_proxy=http://localhost:8080/ curl -k https://example.com/
@@ -61,9 +83,9 @@ Proxy server listening at http://*:8080
 
 可以看到可用的发布标签 [在这里](https://hub.docker.com/r/mitmproxy/mitmproxy/tags/) 。
 
--   `dev`始终跟踪 git-master 分支并代表不稳定的开发树。
--   `latest`始终指向与最新稳定版本相同的图像，包括错误修复版本（例如， `4.0.0`和 `4.0.1`).
--   `X.Y.Z`标签包含具有此版本号的 mitmproxy 版本。
+- `dev`始终跟踪 git-master 分支并代表不稳定的开发树。
+- `latest`始终指向与最新稳定版本相同的图像，包括错误修复版本（例如， `4.0.0`和 `4.0.1`).
+- `X.Y.Z`标签包含具有此版本号的 mitmproxy 版本。
 
 ## 安全通知
 

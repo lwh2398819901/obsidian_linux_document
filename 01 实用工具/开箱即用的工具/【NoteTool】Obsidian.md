@@ -4,7 +4,7 @@ dg-publish: true
 ```toc
 ```
 ## 简介
-对于这个
+
 
 ## 参考
 [obsidian官网](https://obsidian.md/)
@@ -18,3 +18,9 @@ dg-publish: true
 <https://www.bilibili.com/video/BV1UY411b7E3>
 
 <https://www.bilibili.com/video/BV1hf4y1P7iN>
+
+## obsidian发布到互联网
+示例网站：
+https://obsidian-linux-document.vercel.app/
+
+https://vercel.com/lwh2398819901
