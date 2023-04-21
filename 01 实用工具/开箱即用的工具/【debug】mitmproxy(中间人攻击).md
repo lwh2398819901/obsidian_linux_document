@@ -90,3 +90,49 @@ Proxy server listening at http://*:8080
 ## 安全通知
 
 Docker 镜像中的依赖项在发布时被冻结，并且无法更新 原地。 这意味着我们必须捕获任何错误或安全问题 可能存在。 我们通常不会仅仅为了更新而发布新的 Docker 镜像 依赖性（尽管如果我们意识到一个非常严重的问题，我们可能会这样做）。
+
+
+
+
+## 下载
+
+[**官方网站：https://mitmproxy.org/**](https://mitmproxy.org/)
+![[Pasted image 20230419095534.png]]
+
+
+## 使用
+### windows
+1. 下载后一路安装下一步即可
+![[Pasted image 20230419095646.png]]
+
+2. 安装后可以通过cmd命令行启动`mitmproxy --version`，首先查看一下版本
+
+![[Pasted image 20230419095903.png]]
+
+3. 设置系统代理or设置浏览器代理
+
+
+启动mitmdump
+
+![[Pasted image 20230419100538.png]]
+
+启动后在用户家目录下会创建一个.mitmproxy文件夹
+![[Pasted image 20230419100613.png]]
+
+进入文件夹后，可以看到是证书，只要客户端信任其内置的证书颁发机构，`Mitmproxy`即可即时解密加密的流量(指的是https流量，http裸奔在网络上呢，不需要证书)。
+
+通常，这意味着必须在客户端设备上安装`mitmproxy CA`证书。
+
+1. 通过浏览器下载证书
+2. 
+
+3. 浏览器安装证书
+4. 手动命令安装证书
+5. 双击安装证书
+6. 给浏览器安装证书
+
+
+
+参考链接：[mitmproxy安装证书](https://ptorch.com/docs/10/mitmproxy-concepts-certificates)
+
+### linux
