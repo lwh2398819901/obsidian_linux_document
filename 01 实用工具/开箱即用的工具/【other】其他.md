@@ -31,7 +31,12 @@ linux下mysql的可视化工具
 linux下标签工具
 
 
+## 飞书
+【飞书妙记】如何用“飞书妙记”将B站视频免费转文字？
+https://zhuanlan.zhihu.com/p/387770665
 
+![[Pasted image 20230531173155.png]]
+![[Pasted image 20230531173218.png]]
 
 
 
