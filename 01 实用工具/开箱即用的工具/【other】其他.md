@@ -33,10 +33,20 @@ linux下标签工具
 
 ## 飞书
 【飞书妙记】如何用“飞书妙记”将B站视频免费转文字？
+
 https://zhuanlan.zhihu.com/p/387770665
+
+**(B站视频下载工具)** https://xbeibeix.com/api/bilibili  
 
 ![[Pasted image 20230531173155.png]]
 ![[Pasted image 20230531173218.png]]
 
 
+## 远程桌面
+[ 给大家整理了几个好用的远程软件真实测评，大学生和打工人必备~用好远程，效率翻倍【建议收藏】](https://springmeng.blog.csdn.net/article/details/127294014)
 
+![[Pasted image 20230605112723.png]]
+**toDesk**
+![[Pasted image 20230605112842.png]]
+**向日葵**
+![[Pasted image 20230605112919.png]]
