@@ -26,3 +26,7 @@ https://onboarding.immersivetranslate.com/step-2/
 ## SuperCopy 超级复制
 
 ![[Pasted image 20230706142636.png]]
+
+## Proxy SwitchyOmega 代理（vpn）
+
+![[Pasted image 20230830165609.png]]
