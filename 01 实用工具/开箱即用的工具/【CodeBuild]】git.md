@@ -1,8 +1,14 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 ```toc
 ```
+
+## git三大特色之Stage(暂存区)
+![[Pasted image 20231204104734.png]]
+[Git三大特色之Stage(暂存区)_git stage-CSDN博客](https://blog.csdn.net/qq_32452623/article/details/78417609)
+
+<iframe src="https://blog.csdn.net/qq_32452623/article/details/78417609" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
 
 ## git 命令行中图形化显示提交日志
 
@@ -123,3 +129,4 @@ url = <https://github.com/username/project-sub-1.git>
 git commit -m "delete submodule project-sub-1"
 ```
 至此完成对子模块的删除。
+
