@@ -1,9 +1,4 @@
 ```python
-import micropip
-await micropip.install('numpy')  
-import numpy as np
-a = np.random.rand(3,2)
-b = np.random.rand(2,5)
-
-print(a@b)
+a = [1,2,3,4,5]
+print(a)
 ```
