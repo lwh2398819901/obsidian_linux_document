@@ -7,6 +7,7 @@ bin-release/
 # Other files and folders
 .settings/
 temp/
+tmp/
 # Executables
 *.swf
 *.air
@@ -16,3 +17,5 @@ temp/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+tmp/test.md
