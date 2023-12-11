@@ -130,3 +130,6 @@ git commit -m "delete submodule project-sub-1"
 ```
 至此完成对子模块的删除。
 
+ **5.查看子模块的状态**
+
+要查看子模块的状态，可以使用`git submodule status`命令。该命令会显示子模块的当前状态，包括子模块的SHA-1提交ID、路径和子模块URL。
