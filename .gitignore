@@ -19,3 +19,4 @@ tmp/
 # information for Eclipse / Flash Builder.
 
 tmp/test.md
+tmp/*
