@@ -47,5 +47,8 @@ cmake --build build --target install #等同于 cd build;cmake ..; make install
 ## learn 2 windows下构建cmake工程
 ![](附件/1.2在windows下使用cmake（gcc、msvc）_哔哩哔哩_bilibili_2'36.490''.jpg)
 
+## learn 3 linux 下构建cmake
+
+## 
 
 
