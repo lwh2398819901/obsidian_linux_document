@@ -70,4 +70,12 @@ cmake -P *.cmake
 
 可使用附件中的示例
 
+![](附件/cmake/02%20语法/messages.cmake)
 
+
+## learn 5 变量操作 set, list
+![](附件/2.2%20Cmake语法set与list_哔哩哔哩_bilibili_0'11.172''.jpg)
+
+
+### set
+![](附件/2.2%20Cmake语法set与list_哔哩哔哩_bilibili_1'1.317''.jpg)
