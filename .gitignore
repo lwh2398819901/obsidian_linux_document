@@ -1,6 +1,8 @@
 # Build and Release Folders
 bin-debug/
 bin-release/
+build/*
+build/
 [Oo]bj/
 [Bb]in/
 .obsidian

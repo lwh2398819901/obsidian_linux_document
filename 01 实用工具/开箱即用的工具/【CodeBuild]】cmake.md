@@ -1,6 +1,3 @@
----
-dg-publish: true
----
 
 ```toc
 ```
@@ -38,6 +35,8 @@ cmake --build build --target install #等同于 cd build;cmake ..; make install
 
 [静态动态库----CMake学习笔记二](https://zhuanlan.zhihu.com/p/149790907)
 
+
+#  简介及构建
 ## learn 1  cmake构建项目流程
 ![](附件/现代C++_%20CMake简明教程_哔哩哔哩_bilibili_8'23.494''.jpg)
 ![](附件/现代C++_%20CMake简明教程_哔哩哔哩_bilibili_8'36.479''.jpg)
@@ -48,7 +47,27 @@ cmake --build build --target install #等同于 cd build;cmake ..; make install
 ![](附件/1.2在windows下使用cmake（gcc、msvc）_哔哩哔哩_bilibili_2'36.490''.jpg)
 
 ## learn 3 linux 下构建cmake
+1. apt 安装
+```
+ sudo apt install cmake
+```
+2. 源码安装
+![](附件/1.3在linux下使用CMake_哔哩哔哩_bilibili_1'57.162''.jpg)
 
-## 
+# 语法
+## learn 4 cmake语法 message
+![](附件/2.1%20CMake语法%20message_哔哩哔哩_bilibili_0'42.284''.jpg)
+
+![](附件/2.1%20CMake语法%20message_哔哩哔哩_bilibili_0'59.323''.jpg)
+
+![](附件/2.1%20CMake语法%20message_哔哩哔哩_bilibili_1'18.081''.jpg)
+
+使用cmake直接运行某个.cmake文件
+
+```
+cmake -P *.cmake
+```
+
+可使用附件中的示例
 
 
