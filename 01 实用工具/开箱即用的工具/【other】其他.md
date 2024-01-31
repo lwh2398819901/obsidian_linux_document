@@ -1,6 +1,4 @@
----
-dg-publish: true
----
+
 ```toc
 ```
 <span style="background:#A0CCF6">这里收录一些我常用 但是没有太多学习成本的工具，不值得像是git一样单独一个章节介绍。</span>
@@ -54,3 +52,8 @@ https://zhuanlan.zhihu.com/p/387770665
 ## 拖机软件 
 [安徽伊碧克信息技术有限公司 (ibik.cn)](https://www.ibik.cn/)
 ![[Pasted image 20231208165021.png]]
+
+## RUFUS  windows 镜像工具
+https://rufus.ie/zh/
+
+![](附件/fe87179ecbe7e3cd186f52a44af703a.png)
