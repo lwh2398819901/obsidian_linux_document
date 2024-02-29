@@ -48,6 +48,8 @@ https://zhuanlan.zhihu.com/p/387770665
 ![[Pasted image 20230605112842.png]]
 **向日葵**
 ![[Pasted image 20230605112919.png]]
+**parsec**
+![](附件/Pasted%20image%2020240201134608.png)
 
 ## 拖机软件 
 [安徽伊碧克信息技术有限公司 (ibik.cn)](https://www.ibik.cn/)

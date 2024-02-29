@@ -1,6 +1,4 @@
----
-dg-publish: true
----
+
 ```toc
 ```
 ## vim命令大全
