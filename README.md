@@ -1,7 +1,4 @@
----
-dg-publish: true
-dg-home: true
----
+
 ```toc
 ```
 
@@ -21,5 +18,8 @@ dg-home: true
 ## 添加了自动同步更新机制
 
 目前添加了obsidian git 自动同步更新，当文件修改后 五分钟内将同步更新一次，所以commit可能会比较频繁
+
+## AI写作声明
+本学习文档将使用chatgpt等ai辅助写作，但是本人会对内容进行校对。
 
 
