@@ -6,7 +6,7 @@ current_directory=$(pwd)
 # 定义输入和输出目录
 input_directory=$current_directory
 output_directory=$current_directory/jupyterLab
-
+mkdir "$output_directory"
 # 遍历输入目录中的所有.md文件
 for file in "$input_directory"/*.md; do
     # 提取文件名（不含扩展名）
