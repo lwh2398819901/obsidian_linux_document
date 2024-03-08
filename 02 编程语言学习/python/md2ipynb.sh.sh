@@ -1,22 +1,25 @@
 #!/bin/bash
 
-# 获取当前目录路径
-current_directory=$(pwd)
-
-# 定义输入和输出目录
-input_directory=$current_directory
-output_directory=$current_directory/jupyterLab
-mkdir "$output_directory"
-# 遍历输入目录中的所有.md文件
-for file in "$input_directory"/*.md; do
-    # 提取文件名（不含扩展名）
-    filename=$(basename -- "$file")
-    filename="${filename%.*}"
+# 无限循环
+while true; do
+    current_directory=$(pwd)
+    input_directory=$current_directory
+    output_directory=$current_directory/jupyterLab
     
-    # 设置输出文件路径
-    output_file="$output_directory/$filename.ipynb"
+    if [ ! -d "$output_directory" ]; then
+        mkdir "$output_directory"
+    fi
     
-    # 使用notedown命令将md文件转换为ipynb格式
-    #notedown "$file" --to notebook --run --output "$output_file"
-    notedown "$file" > "$output_file"
+    for file in "$input_directory"/*.md; do
+        filename=$(basename "$file")
+        filename="${filename%.*}"
+        notebook_filename="$output_directory/$filename.ipynb"
+        
+        if [ ! -f "$notebook_filename" ] || [ "$file" -nt "$notebook_filename" ]; then
+            notedown "$file" --to notebook --output "$notebook_filename"
+        fi
+    done
+    
+    # 等待十秒钟
+    sleep 10
 done
