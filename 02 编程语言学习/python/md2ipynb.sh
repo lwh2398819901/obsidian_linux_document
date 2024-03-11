@@ -23,6 +23,6 @@ for file in "$input_directory"/*.md; do
     notebook_filename="$output_directory/$filename.ipynb"
     
     if [ ! -f "$notebook_filename" ] || [ "$file" -nt "$notebook_filename" ]; then
-        /media/liuwh/655657a9-165b-475d-873c-1f135878dc45/anaconda/anaconda3/bin/notedown "$file" --to notebook --output "$notebook_filename"
+        notedown "$file" --to notebook --output "$notebook_filename"
     fi
 done
