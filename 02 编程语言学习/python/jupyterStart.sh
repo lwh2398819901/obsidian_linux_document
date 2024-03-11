@@ -11,5 +11,5 @@ if lsof -Pi :8888 -sTCP:LISTEN -t >/dev/null ; then
     exit 1
 else
     echo "Starting JupyterLab in $target_directory"
-    cd "$target_directory" && jupyter lab --NotebookApp.token=''
+    cd "$target_directory" && jupyter lab --no-browser --NotebookApp.token=''
 fi
