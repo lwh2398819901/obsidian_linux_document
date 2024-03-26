@@ -26,9 +26,6 @@ docker 架构
 ![](01%20%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%BC%80%E7%AE%B1%E5%8D%B3%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/%E9%99%84%E4%BB%B6/db87cece39cba9ae0d57764a17f46e5d_MD5.jpeg)
 
 
-镜像（image)：
-容器 (container)： 
-仓库 (repository)：
 
 ### linux
 
